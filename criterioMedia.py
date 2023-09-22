@@ -22,8 +22,7 @@ def criterioMedia():
     Arvore = DecisionTreeClassifier(criterion='entropy').fit(features, target)
 
     plt.figure(figsize=(10, 6.5))
-    tree.plot_tree(Arvore,feature_names=['P1', 'P2', 'PercFalta'],class_names=['Aprovado', 'Reprovado'],
-                   filled=True, rounded=True)
+    tree.plot_tree(Arvore,feature_names=['P1', 'P2', 'PercFalta'],class_names=['Aprovado', 'Reprovado'],filled=True, rounded=True)
     plt.show()
 
     fig, ax = plt.subplots(figsize=(25, 10))
